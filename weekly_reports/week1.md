@@ -7,6 +7,7 @@
 ## Summary of Work Done
 
 During this week, My main focus was on establishing the foundation for my project by completing these following tasks:
+
 - I selected **Rock-Paper-Scissor AI bot** as the project topic.
 - I finalized the programming language and project specifications:
   - **Programming Language**: Python
@@ -42,4 +43,3 @@ During this week, My main focus was on establishing the foundation for my projec
 - No major questions at the moment. However, all feedback on the project specification would be appreciated to ensure that my project aligns with course expectations.
 
 ---
-
