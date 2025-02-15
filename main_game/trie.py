@@ -7,9 +7,6 @@ class RPSTrieNode:
     def __init__(self):
         self.kids = {}
         self.counts = {'r': 0, 'p': 0, 's': 0}
-    def get_kids(self):
-        """return the children of this node"""
-        return self.kids
 
 class Trie:
     """stores move sequences; only accepts history+move lengths of 2-6"""
