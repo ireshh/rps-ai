@@ -53,7 +53,6 @@ class TestMultiAI(unittest.TestCase):
 
 class TestAIIntegration(unittest.TestCase):
     """integration tests for AI"""
-    
     def test_zero_count_prediction(self):
         """test prediction with empty count node"""
         ai = MultiAI()
