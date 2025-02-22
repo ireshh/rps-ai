@@ -3,7 +3,7 @@ multi AI module for Rock, Paper, Scissors game
 """
 
 import random
-from trie import Trie
+from main_game.trie import Trie
 
 WIN_CONDITIONS = {('r', 's'), ('s', 'p'), ('p', 'r')}
 POSSIBLE_MOVES = ['r', 'p', 's']
@@ -16,6 +16,7 @@ class MultiAI:
         self.focus_length = 5
         self.multi_models = {order: Trie() for order in range(1, 6)}
         self.model_history = {order: [] for order in range(1, 6)}
+        self.last_rec_moves = {}
 
     def counter_move(self, move):
         """return the counter to the user's move"""

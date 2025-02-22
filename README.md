@@ -1,2 +1,3 @@
 # rps-ai
-A Rock Paper Scissor AI for AI labs 
+
+A Rock Paper Scissor AI for AI labs.

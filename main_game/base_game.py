@@ -2,7 +2,7 @@
 this is the implementation for a AI Rock-Paper-Scissors game
 """
 
-from multi_ai import MultiAI
+from main_game.multi_ai import MultiAI
 
 multi_ai = MultiAI()
 past_choices = []
@@ -24,8 +24,8 @@ def input_user_choice():
     return choice
 
 def who_wins(user, comp):
-    global USER_WINS, COMPUTER_WINS, TIES
     """return outcome text & update scores"""
+    global USER_WINS, COMPUTER_WINS, TIES
     if user == comp:
         TIES += 1
         return "You Tied!"
@@ -62,9 +62,9 @@ def play_rps():
             f"Ties: {TIES}"
         )
         multi_ai.update_after_round(past_choices, user)
-        if len(past_choices) >= 6:
-            past_choices.pop(0)
         past_choices.append(user)
+        if len(past_choices) > 6:
+            past_choices.pop(0)
 
 if __name__ == "__main__":  # pragma: no cover
     play_rps()
